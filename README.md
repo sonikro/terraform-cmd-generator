@@ -7,7 +7,9 @@ Generate commands based on Terraform Resources
 [![Version](https://img.shields.io/npm/v/terraform-cmd-generator.svg)](https://npmjs.org/package/terraform-cmd-generator)
 [![Downloads/week](https://img.shields.io/npm/dw/terraform-cmd-generator.svg)](https://npmjs.org/package/terraform-cmd-generator)
 [![License](https://img.shields.io/npm/l/terraform-cmd-generator.svg)](https://github.com/sonikro/terraform-cmd-generator/blob/master/package.json)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=terraform-cmd-generator&metric=alert_status)](https://sonarcloud.io/dashboard?id=terraform-cmd-generator)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=terraform-cmd-generator&metric=bugs)](https://sonarcloud.io/dashboard?id=terraform-cmd-generator)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=terraform-cmd-generator&metric=coverage)](https://sonarcloud.io/dashboard?id=terraform-cmd-generator)
 <!-- toc -->
 * [Usage](#usage)
 * [Example](#example)

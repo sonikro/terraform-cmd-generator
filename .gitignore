@@ -6,3 +6,5 @@
 /tmp
 /yarn.lock
 node_modules
+.nyc_coverage/
+.nyc_output/

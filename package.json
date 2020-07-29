@@ -51,7 +51,7 @@
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rimraf lib && tsc -b",
-    "test": "nyc --reporter lcov --reporter text --report-dir .nyc_coverage --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
+    "test": "nyc --reporter lcov --report-dir .nyc_coverage --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
   },
   "types": "lib/index.d.ts"
 }

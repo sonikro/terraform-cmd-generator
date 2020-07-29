@@ -1,0 +1,58 @@
+{
+  "name": "terraform-cmd-generator",
+  "description": "Generate commands based on Terraform Resources",
+  "version": "0.0.1",
+  "author": "Sonikro",
+  "bin": {
+    "tfgenerate": "./bin/run"
+  },
+  "bugs": "https://github.com/sonikro/terraform-cmd-generator/issues",
+  "dependencies": {
+    "@oclif/command": "^1.7.0",
+    "@oclif/config": "^1.16.0",
+    "@oclif/plugin-help": "^3.1.0",
+    "fs": "0.0.1-security",
+    "tslib": "^1.13.0",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.6",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.17.28",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/sonikro/terraform-cmd-generator",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "tfgenerate"
+  },
+  "repository": "sonikro/terraform-cmd-generator",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rimraf lib && tsc -b && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}

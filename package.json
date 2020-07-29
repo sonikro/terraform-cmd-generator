@@ -51,7 +51,7 @@
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rimraf lib && tsc -b && oclif-dev readme",
-    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "nyc --reporter lcov --reporter text --report-dir .nyc_coverage --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"

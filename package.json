@@ -1,7 +1,7 @@
 {
   "name": "terraform-cmd-generator",
   "description": "Generate commands based on Terraform Resources",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Sonikro",
   "bin": {
     "tfgenerate": "./bin/run"

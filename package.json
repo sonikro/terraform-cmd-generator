@@ -53,5 +53,18 @@
     "prepack": "rimraf lib && tsc -b",
     "test": "nyc --reporter=lcov --report-dir coverage --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "all": true  
+  }
 }
